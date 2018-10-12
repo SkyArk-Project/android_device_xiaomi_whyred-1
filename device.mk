@@ -24,6 +24,9 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
+# Build Type
+export HAVOC_BUILD_TYPE=Official
+
 # USB
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory

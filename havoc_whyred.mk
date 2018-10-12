@@ -24,17 +24,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/xiaomi/whyred/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 
-# Inherit from Omni custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+# Inherit from Havoc custom product configuration
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := omni_whyred
+PRODUCT_NAME := havoc_whyred
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
