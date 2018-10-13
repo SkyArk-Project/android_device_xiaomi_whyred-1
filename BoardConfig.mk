@@ -53,9 +53,10 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
-TARGET_KERNEL_CONFIG := whyred-perf_defconfig
+TARGET_KERNEL_CONFIG := whyred_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-#TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_VERSION := 7.0.2
 
 # Partitions
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -195,7 +196,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
-include vendor/omni/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # QCOM TIME SERVICES
