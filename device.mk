@@ -306,6 +306,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiParts
 
+# MIUI Offline Charging
+PRODUCT_PACKAGES += \
+    chargeonlymode
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     libbt-vendor
