@@ -536,7 +536,7 @@ etc/permissions/qcrilhook.xml
 etc/permissions/qti_libpermissions.xml
 framework/embmslibrary.jar
 -framework/qcrilhook.jar
-#framework/qti-telephony-common.jar|16fea87b7019a512cd8fd0e51ed6c28d
+framework/qti-telephony-common.jar|2EBA987AE297A892E895EC1E9A302B41DBE0232E
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib64/libconfigdb.so

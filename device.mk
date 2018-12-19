@@ -28,8 +28,6 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Build Type
-export HAVOC_BUILD_TYPE=Official
 
 # USB
 PRODUCT_PACKAGES += \
@@ -86,8 +84,13 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_BOOTANIMATION_SIZE := 1080p
 
-# Audio
-PRODUCT_PACKAGES += \
+# Power HAL
+    PRODUCT_PACKAGES += \            
+android.hardware.power@1.1-service-qti
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+   
     audiod \
     audio.a2dp.default \
     audio.primary.sdm660 \

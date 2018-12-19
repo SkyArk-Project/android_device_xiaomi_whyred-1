@@ -29,7 +29,7 @@ DEVICE_PACKAGE_OVERLAYS += device/xiaomi/whyred/overlay
 $(call inherit-product, vendor/havoc/config/common.mk)
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
